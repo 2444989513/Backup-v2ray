@@ -33,7 +33,7 @@ systemctl enable v2ray.service
 
 systemctl restart v2ray.service
 
-/usr/bin/v2ray/v2ray -version
+/usr/local/bin/v2ray -version
 
 }
 
