@@ -20,7 +20,7 @@ DAT_PATH=${DAT_PATH:-/usr/local/share/v2ray}
 # export JSON_PATH='/usr/local/etc/v2ray'
 
 JSON_PATH=${JSON_PATH:-/etc/v2ray}
-＃JSON_PATH=${JSON_PATH:-/usr/local/etc/v2ray}
+＃ JSON_PATH=${JSON_PATH:-/usr/local/etc/v2ray}
 
 # Set this variable only if you are starting v2ray with multiple configuration files:
 # export JSONS_PATH='/usr/local/etc/v2ray'
