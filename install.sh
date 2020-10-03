@@ -14,7 +14,7 @@ wget -nc --no-check-certificate https://raw.githubusercontent.com/2444989513/Bac
 
 systemctl disable v2ray.service --now
 
-rm -r /usr/bin/v2ray/
+rm -rf /usr/bin/v2ray/
 rm -rf /etc/systemd/system/v2ray.service
 rm -rf /lib/systemd/system/v2ray.service
 rm -rf /etc/init.d/v2ray
