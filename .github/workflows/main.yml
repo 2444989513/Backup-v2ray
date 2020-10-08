@@ -23,7 +23,7 @@ jobs:
  
       - name: Set variables
         run: |
-          echo "VERSION=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/2444989513/Backup-v2ray                                                                                                                                                                                                                                    /master/version | head -1)" >> $GITHUB_ENV
+          echo "VERSION=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/2444989513/Backup-v2ray/master/version | head -1)" >> $GITHUB_ENV
         shell: bash
  
       - name: Get code
@@ -43,7 +43,7 @@ jobs:
  
       - name: Build linux-32
         run: |
-          env CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -o v2ray -trimpath -ldflags "-s -w" ./main                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+          env CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -o v2ray -trimpath -ldflags "-s -w" ./main
           env CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -o v2ctl -trimpath -ldflags "-s -w" -tags confonly ./infra/control/main
           chmod +x v2ray v2ctl
           zip v2ray-linux-32.zip v2ray v2ctl geosite.dat geoip.dat
